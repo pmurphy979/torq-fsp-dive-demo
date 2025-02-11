@@ -23,4 +23,5 @@ localhost,{KDBBASEPORT}+20,dqc,dqc1,${TORQAPPHOME}/appconfig/passwords/accesslis
 localhost,{KDBBASEPORT}+21,dqcdb,dqcdb1,${TORQAPPHOME}/appconfig/passwords/accesslist.txt,1,1,60,4000,${KDBDQCDB},0,,
 localhost,{KDBBASEPORT}+22,dqe,dqe1,${TORQAPPHOME}/appconfig/passwords/accesslist.txt,1,1,,,${KDBCODE}/processes/dqe.q,0,-parentproctype dqcommon,
 localhost,{KDBBASEPORT}+23,dqedb,dqedb1,${TORQAPPHOME}/appconfig/passwords/accesslist.txt,1,1,60,4000,${KDBDQEDB},0,,
-localhost,13311,divegateway,divegateway1,${TORQAPPHOME}/appconfig/passwords/accesslist.txt,1,1,,4000,${KDBAPPCODE}/processes/divegateway.q,1,,
+localhost,{KDBBASEPORT}+24,divetrigger,divetrigger1,${TORQAPPHOME}/appconfig/passwords/accesslist.txt,1,1,,4000,${KDBAPPCODE}/processes/divetrigger.q,1,,
+localhost,13311,divedlgw,divedlgw1,${TORQAPPHOME}/appconfig/passwords/accesslist.txt,1,1,,4000,${KDBAPPCODE}/processes/divedlgw.q,1,,

@@ -1,4 +1,4 @@
-// DIVE gateway settings
+// DIVE data layer gateway settings
 
 \d .servers
 CONNECTIONS:`hdb

@@ -1,2 +1,3 @@
 path,match,function,newonly,movetodirectory
 {KDBPCAPS},*.pcap,sendpackets,1,
+{TORQDATAHOME}/filedrop,*.csv,dive,0,

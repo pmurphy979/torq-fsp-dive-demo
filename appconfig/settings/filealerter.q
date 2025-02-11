@@ -4,5 +4,5 @@ tickerplanttype:`segmentedtickerplant					// Type of tickerplant to connect to
 
 \d .servers
 
-CONNECTIONS:.fa.tickerplanttype
+CONNECTIONS:.fa.tickerplanttype,`hdb`divetrigger
 

@@ -23,4 +23,5 @@ segmentedtickerplant:pass
 filealerter:pass
 admin:admin
 idb:pass
-divegateway:pass
+divetrigger:pass
+divedlgw:pass
