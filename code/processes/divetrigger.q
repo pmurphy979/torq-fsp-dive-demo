@@ -14,21 +14,21 @@
   }
 
 // Tell DIVE to run rules based on a trigger name
-.dive.triggerrules:{[procname;funcname;triggername]
+.dive.triggerrules:{[procname;funcname;triggername;overrides]
   h:first .servers.gethandlebytype[`divegateway;`any];
   if[null h;
     .lg.w[`dive;"failed to call trigger ", string[triggername], " from function ", string[funcname], " in process ", string[procname], ": divegateway process unavailable"];
     :0b;
     ];
   .lg.o[`dive;"calling trigger ", string[triggername], " from function ", string[funcname], " in process ", string procname];
-  neg[h](`.api.triggerrules;triggername);
+  neg[h](`.api.triggerrules;triggername;overrides);
   1b
   }
 
 // Trigger from events table
 upd:{[x;y]
   if[x=`dive_trigger_events;
-    (.dive.triggerrules') . y[`procname`funcname`sym]
+    (.dive.triggerrules') . (update get each overrides from y)[`procname`funcname`sym`overrides]
     ]
   }
 

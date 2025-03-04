@@ -26,7 +26,7 @@
   // Return empty result if no HDB is available
   if[null h;
     .lg.e[`dive;string[c],": error submitting query ID ",string[id],": hdb unavailable"];
-    return[();id];
+    .dive.return[();id];
     :id;
     ];
   neg[h](c;d,enlist[`id]!enlist id);
