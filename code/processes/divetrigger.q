@@ -28,7 +28,7 @@
 // Trigger from events table
 upd:{[x;y]
   if[x=`dive_trigger_events;
-    (.dive.triggerrules') . (update get each overrides from y)[`procname`funcname`sym`overrides]
+    (.dive.triggerrules') . (update -9!/: overrides from y)[`procname`funcname`sym`overrides]
     ]
   }
 
