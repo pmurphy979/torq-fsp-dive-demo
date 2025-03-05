@@ -28,6 +28,6 @@
     :0b;
     ];
   .lg.o[`dive;"logging trigger event ", string[triggername], " from function ", string funcname];
-  neg[h](`.u.upd;`dive_trigger_events;(triggername;.proc.procname;funcname;enlist .Q.s1 overrides));
+  neg[h](`.u.upd;`dive_trigger_events;(triggername;.proc.procname;funcname;enlist -8! overrides));
   1b
   }
